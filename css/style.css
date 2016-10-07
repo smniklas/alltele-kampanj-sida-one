@@ -1,64 +1,77 @@
 html{
     margin:0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 body{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300;
     margin:0;
 }
 body h1{
-    font-family: 'Bitter', serif;
+    font-weight: 400;
     font-size:35px;
+    margin:0;
 }
 body p{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 200%
+    font-size: 20px;
+    line-height: 180%
 }
-.main-parallax{
-    background-image: url("../images/white-iphone.jpg");
-    min-height: 1000px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.second-parallax{
-    background-image: url("../images/iphone-back.jpeg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.third-parallax{
-    background-image: url("../images/iphone-wood.jpeg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.title-section{
+.header{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:0;
+    width:100%;
+    height:10%;
+    background-color: #29b6f6;
+}
+.main-content{
+    position: absolute;
+    top:10%;
+    height:75%;
+    width:100%;
+    background-image: url("../white-iphone.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.main-content h1{
     text-align: center;
 }
-.content-header{
-    text-align:center;
+.text{
+    position: absolute;
+    width:20%;
+    height:100%;
+    background-color: #ECECEC;
 }
-.content-text{
-    display:inline-block;
-    width: 30%;
-}
-.content-article{
+.text p{
     text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.footer-styles{
-    background-color: #22313F;
-    color:#ECECEC;
-    margin:0;
+.text h1{
+    margin-top:10px;
 }
-.footer-styles ul{
-    margin:0;
+.one{
+    left:5%;
+}
+.two{
+    left:40%;
+}
+.three{
+    right:5%;
+}
+.footer{
+    position: absolute;
+    background-color: #3498DB!important;
+    bottom:0;
+    width:100%;
+
+}
+.logo-div{
+    position: relative;
+    left:15%;
+    top:20%;
 }
